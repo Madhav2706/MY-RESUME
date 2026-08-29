@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Madhav Singh — BCA student and developer skilled in Python, HTML, CSS and JavaScript. Portfolio, projects and contact.">
+<meta property="og:title" content="Madhav Singh — Portfolio">
+<meta property="og:description" content="BCA student and developer skilled in Python, HTML, CSS and JavaScript.">
+<title>Madhav Singh — Portfolio</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2314181f'/%3E%3Ctext x='50' y='66' font-family='Georgia,serif' font-size='42' fill='%2352a894' text-anchor='middle'%3EMS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+
+      <div class="portrait-frame">
+        <span class="bracket bracket-tl">{</span>
+        <img src="profile.jpg" alt="Madhav Singh" class="portrait" id="portraitImg"
+             onerror="this.style.display='none'; document.getElementById('portraitFallback').style.display='flex';">
+        <div class="portrait-fallback" id="portraitFallback">MS</div>
+        <span class="bracket bracket-br">}</span>
+      </div>
+
+      <h1 class="name">Madhav Singh</h1>
+      <p class="role">BCA Student &amp; Aspiring Developer</p>
+
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        Open to internships &amp; placements
+      </div>
+
+      <p class="location">Rajeev Gandhi Nagar, Mathura</p>
+
+      <nav class="nav" aria-label="Section navigation">
+        <a href="#about" class="nav-link active" data-section="about"><span class="nav-tag">01</span>About</a>
+        <a href="#skills" class="nav-link" data-section="skills"><span class="nav-tag">02</span>Skills</a>
+        <a href="#education" class="nav-link" data-section="education"><span class="nav-tag">03</span>Education</a>
+        <a href="#projects" class="nav-link" data-section="projects"><span class="nav-tag">04</span>Projects</a>
+        <a href="#contact" class="nav-link" data-section="contact"><span class="nav-tag">05</span>Contact</a>
+      </nav>
+
+      <div class="socials">
+        <a href="https://github.com/Madhav2706" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.17.69-3.84-1.35-3.84-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17a10.9 10.9 0 0 1 5.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.17 1.82 1.17 3.06 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14 0 1.54-.01 2.79-.01 3.17 0 .3.2.66.79.55A11.03 11.03 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/madhav-singh-72005b390/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://leetcode.com/u/Madhav_singh07/" target="_blank" rel="noopener" aria-label="LeetCode">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M13.98 2.13a1.5 1.5 0 0 1 2.14 2.1L11.9 9.2l6.06 6.06a1.5 1.5 0 1 1-2.12 2.12l-6.94-6.94a1.5 1.5 0 0 1 0-2.12l5.08-6.19Zm-4.4 8.02 4.2 4.2a1.5 1.5 0 0 1-2.12 2.12l-4.2-4.2a3.5 3.5 0 0 1 0-4.95l4.5-4.5a1.5 1.5 0 1 1 2.12 2.12l-4.5 4.5a.5.5 0 0 0 0 .71ZM6 18a1.5 1.5 0 0 1 1.5 1.5v.5A1.5 1.5 0 0 1 6 21.5H4.5A4.5 4.5 0 0 1 0 17V7a4.5 4.5 0 0 1 4.5-4.5H6A1.5 1.5 0 0 1 7.5 4v.5A1.5 1.5 0 0 1 6 6H4.5A1.5 1.5 0 0 0 3 7.5v9A1.5 1.5 0 0 0 4.5 18H6Z"/></svg>
+          <span>LeetCode</span>
+        </a>
+        <a href="mailto:thakurmadhav2707@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm19.4 2H2.6l9.4 7.05L21.4 6ZM3 8.24V18h18V8.24l-9 6.75-9-6.75Z"/></svg>
+          <span>Email</span>
+        </a>
+      </div>
+
+      <a class="resume-btn" href="#contact">Get in touch</a>
+    </div>
+  </aside>
+
+  <div class="scrim" id="scrim"></div>
+
+  <main class="main">
+
+    <section id="about" class="section reveal">
+      <p class="eyebrow">01 — Introduction</p>
+      <h2 class="section-title">About Me</h2>
+      <p class="body-text">
+        I'm a third-year BCA student with a solid grip on Python, HTML, CSS, and JavaScript, and a real
+        interest in building things that solve practical problems. I pick up new tools quickly, enjoy
+        thinking through problems from different angles, and work well as part of a team. So far I've
+        built a food delivery application and a movie &amp; web-series finder, and I stay active in
+        college workshops and tech events whenever I can. Right now I'm preparing for placements and
+        looking for opportunities to put my skills to work.
+      </p>
+      <ul class="trait-list">
+        <li>Quick Learner</li>
+        <li>Creative Thinker</li>
+        <li>Team Player</li>
+        <li>Problem Solver</li>
+      </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="skills" class="section reveal">
+      <p class="eyebrow">02 — Toolkit</p>
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-columns">
+        <div class="skill-group">
+          <h3>Programming</h3>
+          <div class="skills-grid">
+            <div class="skill-chip"><span class="dot"></span>Python</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Web Development</h3>
+          <div class="skills-grid">
+            <div class="skill-chip"><span class="dot"></span>HTML</div>
+            <div class="skill-chip"><span class="dot"></span>CSS</div>
+            <div class="skill-chip"><span class="dot"></span>JavaScript</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="education" class="section reveal">
+      <p class="eyebrow">03 — Background</p>
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p class="timeline-meta">Rajiv Academy for Technology &amp; Management &middot; 3rd Year &middot; In Progress</p>
+            <p class="timeline-desc">Coursework spanning programming fundamentals, web development,
+              and problem solving, alongside regular participation in college workshops and
+              technical activities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="projects" class="section reveal">
+      <p class="eyebrow">04 — Selected Work</p>
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-index">01</div>
+          <h3>Food Delivery Application</h3>
+          <p>A food ordering web app where users can browse restaurant menus, add items to a cart,
+             and place orders through a clean, responsive interface.</p>
+          <div class="tech-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://github.com/Madhav2706" target="_blank" rel="noopener" class="project-link">
+            View on GitHub &rarr;
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-index">02</div>
+          <h3>Movie &amp; Web-Series Finder</h3>
+          <p>A discovery app for finding movies and web series, with search and filtering so users
+             can quickly find what to watch next.</p>
+          <div class="tech-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://github.com/Madhav2706" target="_blank" rel="noopener" class="project-link">
+            View on GitHub &rarr;
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="contact" class="section reveal">
+      <p class="eyebrow">05 — Let's Talk</p>
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="body-text">
+        Open to internship and placement opportunities. Feel free to reach out — I'd love to hear from you.
+      </p>
+
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <a href="mailto:thakurmadhav2707@gmail.com">
+            <strong>Email</strong>
+            <span>thakurmadhav2707@gmail.com</span>
+          </a>
+          <a href="tel:+918077986498">
+            <strong>Phone</strong>
+            <span>+91 80779 86498</span>
+          </a>
+          <div class="contact-static">
+            <strong>Location</strong>
+            <span>Rajeev Gandhi Nagar, Mathura</span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xoeqvkdj" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Say hello..."></textarea>
+
+          <button type="submit" class="submit-btn">
+            <span class="btn-text">Send Message</span>
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Madhav Singh</p>
+    </footer>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
